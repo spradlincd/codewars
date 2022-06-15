@@ -55,13 +55,14 @@ function sumStrings(a,b) {
   }
 
   /* remove any commas */
-  let str = new String(tempArr);
-  if (str.length == 1) str = str.concat(',');
-  for (let i = 0; i < str.length; i++) {
-    if (str.charAt(i) === ',') {
-      str = str.replace(str.charAt(i), '');
-    }
-  }
+  let str = tempArr.join('');
+  // if (str.length == 1) str = str.concat(',');
+
+  // for (let i = 0; i < str.length; i++) {
+  //   if (str.charAt(i) === ',') {
+  //     str = str.replace(str.charAt(i), '');
+  //   }
+  // }
 
   return str;
 }
